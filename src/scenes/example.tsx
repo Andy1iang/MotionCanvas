@@ -20,7 +20,7 @@ export default makeScene2D(function* (view) {
   );
 
   yield* all(
-    myCircle().position.x(300, 2).to(-300, 2),
+    myCircle().position.x(0, 1).to(300, 1).to(0,1).to(-300,1),
     myCircle().position.y(300,1).to(0,1).to(-300,1).to(0,1),
     myCircle().fill('#5232e1', 2).to('#e13238', 2),
   );
